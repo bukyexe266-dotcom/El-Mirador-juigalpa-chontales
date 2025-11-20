@@ -1,0 +1,187 @@
+P/*
+==============================
+1. RESET BÁSICO Y TIPOGRAFÍA
+==============================
+*/
+* {
+    /* Resetea márgenes, paddings y asegura que el padding/border
+       no aumenten el tamaño total del elemento */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    /* Suaviza el desplazamiento al usar anclas (#nosotros) */
+    scroll-behavior: smooth;
+}
+
+/*
+==============================
+2. ENCABEZADO (HEADER)
+==============================
+*/
+header {
+    background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1600&q=60') center/cover no-repeat;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* Sombra para hacer el texto legible sobre la imagen */
+    text-shadow: 0 2px 10px rgba(0,0,0,0.9); 
+}
+
+header h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+/*
+==============================
+3. NAVEGACIÓN (NAV)
+==============================
+*/
+nav {
+    background-color: #222;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    /* Mantiene el menú visible al desplazarse */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.2s; /* Efecto suave al pasar el ratón */
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/*
+==============================
+4. SECCIONES GENERALES Y BOTONES
+==============================
+*/
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Estilo específico para el texto de la sección Nosotros */
+#nosotros p {
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 18px;
+}
+
+/* Estilo para el botón de Reservar por WhatsApp dentro de la sección */
+#reserva a {
+    transition: background-color 0.2s;
+}
+
+#reserva a:hover {
+    background-color: #128C7E !important; /* Tono de verde más oscuro al pasar el ratón */
+}
+
+/*
+==============================
+5. GALERÍA
+==============================
+*/
+.gallery {
+    display: grid;
+    /* Crea columnas responsivas: mínimo 250px, distribuye el espacio restante */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 15px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+/*
+==============================
+6. BOTONES FLOTANTES DE REDES SOCIALES
+==============================
+*/
+.btn-social {
+    position: fixed;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 999;
+    transition: transform 0.2s ease;
+}
+
+.btn-social:hover {
+    transform: scale(1.1); /* Agranda ligeramente al pasar el ratón */
+}
+
+.btn-whatsapp { 
+    bottom: 230px; 
+} 
+
+.btn-instagram { 
+    bottom: 170px; 
+}
+
+.btn-facebook { 
+    bottom: 110px; 
+}
+
+.btn-tiktok { 
+    bottom: 50px; 
+}
+
+.social-icon {
+    width: 35px;
+    height: 35px;
+}
+
+/*
+==============================
+7. PIE DE PÁGINA (FOOTER)
+==============================
+*/
+footer {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    font-size: 14px;
+}
