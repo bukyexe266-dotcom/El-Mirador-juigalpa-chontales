@@ -6,10 +6,17 @@
     <title>Hotel & Restaurante El Mirador – Juigalpa</title>
     <link rel="stylesheet" href="styles.css">
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-825KQ8PC5K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-825KQ8PC5K');
+    </script>
+
     <style>
-        
         header {
-            /* Mantenemos el estilo de tu encabezado */
             background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1600&q=60') center/cover no-repeat;
             height: 380px;
             display: flex; flex-direction: column;
@@ -36,7 +43,6 @@
 
         section { padding: 40px 20px; text-align: center; }
 
-        /* ESTILOS DE BOTONES FLOTANTES MEJORADOS */
         .btn-social {
             position: fixed;
             right: 20px;
@@ -46,16 +52,12 @@
             display: flex; justify-content: center; align-items: center;
             box-shadow: 0 4px 12px rgba(0,0,0,0.3);
             z-index: 999;
-            /* Transición para el efecto hover */
             transition: transform 0.2s ease; 
         }
 
-        .btn-social:hover {
-            transform: scale(1.1); /* Ligeramente más grande al pasar el ratón */
-        }
+        .btn-social:hover { transform: scale(1.1); }
         
-        /* Posicionamiento de cada botón */
-        .btn-whatsapp { bottom: 230px; } /* Nuevo en la parte superior del grupo */
+        .btn-whatsapp { bottom: 230px; }
         .btn-instagram { bottom: 170px; }
         .btn-facebook { bottom: 110px; }
         .btn-tiktok { bottom: 50px; }
@@ -64,7 +66,6 @@
             width: 35px;
             height: 35px;
         }
-        /* FIN DE ESTILOS DE BOTONES FLOTANTES */
 
         .gallery {
             display: grid;
@@ -118,7 +119,6 @@
         <img src="WhatsApp Image  (1).jpg">
         <img src="WhatsApp Image (2).jpg">
         <img src="WhatsApp Image 2025-11-20 at 11.36.05 AM.jpg"> 
-        
     </div>
 </section>
 
@@ -143,9 +143,7 @@
     </a>
 </section>
 
----
-
-**
+<!-- Botones flotantes -->
 <a class="btn-social btn-whatsapp" href="https://wa.me/50582336921?text=Hola,%20quisiera%20saber%20más%20sobre%20sus%20servicios" target="_blank">
     <img class="social-icon" src="https://cdn-icons-png.flaticon.com/512/124/124034.png">
 </a>
@@ -161,12 +159,10 @@
 <a class="btn-social btn-tiktok" href="https://www.tiktok.com/@el.mirador.juigalpa" target="_blank">
     <img class="social-icon" src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png">
 </a>
----
 
 <footer>
     © 2025 Hotel & Restaurante El Mirador – Juigalpa, Chontales
 </footer>
 
 </body>
-
 </html>
